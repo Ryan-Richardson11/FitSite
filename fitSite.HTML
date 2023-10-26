@@ -10,15 +10,15 @@
 
 <body>
     <header>
-        <h1>Your Name</h1>
+        <h1>Fitness</h1>
         <p>Web Developer</p>
     </header>
 
     <nav>
         <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
+            <li><a href="#calculateBMI" id="calculateBMI">Calculate BMI</a></li>
+            <li><a href="#caloric intake">Calculate Caloric Intake</a></li>
+            <li><a href="#macros">Calculate Macros</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -63,7 +63,15 @@
         <p>&copy; 2023 Your Name</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="calculations.js"></script>
+    <script>
+        document.getElementById("calculateBMI").addEventListener("click", function (event) {
+            event.preventDefault();
+            BMI();
+            console.log("Your BMI is " + BMI.toFixed(1));
+        });
+    </script>
+
 </body>
 
 </html>
