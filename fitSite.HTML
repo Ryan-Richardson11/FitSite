@@ -10,14 +10,14 @@
 
 <body>
     <header>
-        <h1>Fitness</h1>
-        <p>Web Developer</p>
+        <h1>CalCalc</h1>
+        <p>Anthropometric Measurement Calculators</p>
     </header>
 
     <nav>
         <ul>
             <li><a href="#calculateBMI" id="calculateBMI">Calculate BMI</a></li>
-            <li><a href="#caloric intake">Calculate Caloric Intake</a></li>
+            <li><a href="#caloricIntake" id="caloricIntake">Calculate Caloric Intake</a></li>
             <li><a href="#macros">Calculate Macros</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -63,12 +63,17 @@
         <p>&copy; 2023 Your Name</p>
     </footer>
 
-    <script src="calculations.js"></script>
     <script>
         document.getElementById("calculateBMI").addEventListener("click", function (event) {
             event.preventDefault();
             window.location.href = "bmi.html";
-            BMI();
+        });
+    </script>
+
+    <script>
+        document.getElementById("caloricIntake").addEventListener("click", function (event) {
+            event.preventDefault();
+            window.location.href = "caloricIntake.html";
         });
     </script>
 
