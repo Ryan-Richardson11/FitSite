@@ -16,6 +16,7 @@
 
     <nav>
         <ul>
+            <li><a href="#Home" id="homePage">Home</a></li>
             <li><a href="#calculateBMI" id="calculateBMI">Calculate BMI</a></li>
             <li><a href="#caloricIntake" id="caloricIntake">Calculate Caloric Intake</a></li>
             <li><a href="#macros">Calculate Macros</a></li>
@@ -55,6 +56,13 @@
         document.getElementById("contactInfo").addEventListener("click", function (event) {
             event.preventDefault();
             window.location.href = "contactInfo.html";
+        });
+    </script>
+
+    <script>
+        document.getElementById("homePage").addEventListener("click", function (event) {
+            event.preventDefault();
+            window.location.href = "fitSite.html";
         });
     </script>
 </body>
