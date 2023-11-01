@@ -19,7 +19,7 @@
             <li><a href="#calculateBMI" id="calculateBMI">Calculate BMI</a></li>
             <li><a href="#caloricIntake" id="caloricIntake">Calculate Caloric Intake</a></li>
             <li><a href="#macros">Calculate Macros</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact" id="contactInfo">Contact</a></li>
         </ul>
     </nav>
 
@@ -74,6 +74,13 @@
         document.getElementById("caloricIntake").addEventListener("click", function (event) {
             event.preventDefault();
             window.location.href = "caloricIntake.html";
+        });
+    </script>
+
+    <script>
+        document.getElementById("contactInfo").addEventListener("click", function (event) {
+            event.preventDefault();
+            window.location.href = "contactInfo.html";
         });
     </script>
 

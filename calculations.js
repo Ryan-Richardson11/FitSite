@@ -1,12 +1,7 @@
 
 function BMI(weight, height) {
-
-    if (isNaN(weight) || isNaN(height)) {
-        console.log("Please enter valid numbers for weight and height.");
-        return;
-    }
     var BMI = 703 * (weight / (height ** 2));
-    return window.location.href = "bmi.html?bmi=" + BMI.toFixed(1);
+    return BMI
 }
 
 function caloricIntake(gender, weight, height, age, activityLevel) {
@@ -48,4 +43,8 @@ function caloricIntake(gender, weight, height, age, activityLevel) {
 
 function macros() {
 
+}
+
+function contact() {
+    return "<p>Name: Ryan Richardson</p><p>Email: Ryanrich811@gmail.com</p><p><a href='https://www.linkedin.com/in/ryan-richardson-4b3b9a265/'>LinkedIn</a></p><p><a href='https://github.com/Ryan-Richardson11'>GitHub</a></p>"
 }
