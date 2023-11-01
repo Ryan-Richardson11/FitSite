@@ -35,6 +35,27 @@
         var contactInfo = contact();
         document.getElementById("contactInfo").innerHTML = contactInfo;
     </script>
+
+    <script>
+        document.getElementById("calculateBMI").addEventListener("click", function (event) {
+            event.preventDefault();
+            window.location.href = "bmi.html";
+        });
+    </script>
+
+    <script>
+        document.getElementById("caloricIntake").addEventListener("click", function (event) {
+            event.preventDefault();
+            window.location.href = "caloricIntake.html";
+        });
+    </script>
+
+    <script>
+        document.getElementById("contactInfo").addEventListener("click", function (event) {
+            event.preventDefault();
+            window.location.href = "contactInfo.html";
+        });
+    </script>
 </body>
 
 </html>
