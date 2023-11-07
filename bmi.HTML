@@ -19,7 +19,7 @@
             <li><a href="#Home" id="homePage">Home</a></li>
             <li><a href="#calculateBMI" id="calculateBMI">Calculate BMI</a></li>
             <li><a href="#caloricIntake" id="caloricIntake">Calculate Caloric Intake</a></li>
-            <li><a href="#macros">Calculate Macros</a></li>
+            <li><a href="#macros" id="calculateMacros">Calculate Macros</a></li>
             <li><a href="#contact" id="contactInfo">Contact</a></li>
         </ul>
     </nav>
@@ -79,6 +79,13 @@
         document.getElementById("homePage").addEventListener("click", function (event) {
             event.preventDefault();
             window.location.href = "fitSite.html";
+        });
+    </script>
+
+    <script>
+        document.getElementById("calculateMacros").addEventListener("click", function (event) {
+            event.preventDefault();
+            window.location.href = "macros.html";
         });
     </script>
 </body>

@@ -41,8 +41,17 @@ function caloricIntake(gender, weight, height, age, activityLevel) {
 
 }
 
-function macros() {
+function macros(calorieIntake) {
+    var p1 = calorieIntake % 10;
+    var p2 = calorieIntake % 35;
 
+    var f1 = calorieIntake % 20;
+    var f2 = calorieIntake % 35;
+
+    var c1 = calorieIntake % 45;
+    var c2 = calorieIntake % 65;
+
+    return "Protein: " + p1 + " to " + p2 + " grams |" + "Fat: " + f1 + " to " + f2 + " grams |" + "Carbohydrates: " + p1 + " to " + p2 + " grams |"
 }
 
 function contact() {
