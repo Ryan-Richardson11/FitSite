@@ -10,31 +10,31 @@ function caloricIntake(gender, weight, height, age, activityLevel) {
 
     if (gender == "male") {
         var RMR = (9.99 * weight) + (6.25 * height) - (4.92 * age) + 5;
-        if (activityLevel = "Sedentary") {
+        if (activityLevel == "Sedentary") {
             return RMR;
         }
-        else if (activityLevel = "Low Active") {
+        else if (activityLevel == "Low Active") {
             return RMR *= 1.11
         }
-        else if (activityLevel = "Active") {
+        else if (activityLevel == "Active") {
             return RMR *= 1.25
         }
-        else if (activityLevel = "Very Active") {
+        else if (activityLevel == "Very Active") {
             return RMR *= 1.48
         }
     }
     else if (gender == "female") {
         var RMR = (9.99 * weight) + (6.25 * height) - (4.92 * age) - 161;
-        if (activityLevel = "Sedentary") {
+        if (activityLevel == "Sedentary") {
             return RMR;
         }
-        else if (activityLevel = "Low Active") {
+        else if (activityLevel == "Low Active") {
             return RMR *= 1.12
         }
-        else if (activityLevel = "Active") {
+        else if (activityLevel == "Active") {
             return RMR *= 1.27
         }
-        else if (activityLevel = "Very Active") {
+        else if (activityLevel == "Very Active") {
             return RMR *= 1.45
         }
     }
@@ -42,16 +42,16 @@ function caloricIntake(gender, weight, height, age, activityLevel) {
 }
 
 function macros(calorieIntake) {
-    var p1 = calorieIntake % 10;
-    var p2 = calorieIntake % 35;
+    var p1 = (calorieIntake * .10) / 4;
+    var p2 = (calorieIntake * .35) / 4;
 
-    var f1 = calorieIntake % 20;
-    var f2 = calorieIntake % 35;
+    var f1 = (calorieIntake * .20) / 9;
+    var f2 = (calorieIntake * .35) / 9;
 
-    var c1 = calorieIntake % 45;
-    var c2 = calorieIntake % 65;
+    var c1 = (calorieIntake * .45) / 4
+    var c2 = (calorieIntake * .65) / 4
 
-    return "Protein: " + p1 + " to " + p2 + " grams |" + "Fat: " + f1 + " to " + f2 + " grams |" + "Carbohydrates: " + p1 + " to " + p2 + " grams |"
+    return "Protein: " + p1.toFixed(1) + " to " + p2.toFixed(1) + " grams | Fats: " + f1.toFixed(1) + " to " + f2.toFixed(1) + " grams | Carbohydrates: " + c1.toFixed(1) + " to " + c2.toFixed(1) + " grams";
 }
 
 function contact() {
