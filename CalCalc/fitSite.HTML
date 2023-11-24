@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalCalc</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>CalCalc</h1>
+        <p>Anthropometric Measurement Calculators</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#Home" id="homePage">Home</a></li>
+            <li><a href="#calculateBMI" id="calculateBMI">Calculate BMI</a></li>
+            <li><a href="#caloricIntake" id="caloricIntake">Calculate Caloric Intake</a></li>
+            <li><a href="#macros" id="calculateMacros">Calculate Macros</a></li>
+            <li><a href="#contact" id="contactInfo">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About</h2>
+        <p> Welcome to CalCalc, a project born from my love for health and fitness with my expertise in programming.
+            With a deeply rooted passion for precision and well-being, this platform strives to offer a comprehensive
+            set of tools for precise anthropometric measurements.</br>
+            </br>
+            The mission behind CalCalc is to provide users with accurate and insightful calculations derived from
+            esteemed academic sources. This platform offers an array of calculators enabling individuals to obtain a
+            better understanding of their body's unique requirements. From BMI assessments to detailed caloric intake
+            and macronutrient calculations, every tool is crafted to empower users in making informed decisions about
+            their health.</br>
+            </br>
+            CalCalc is dedicated to offering reliable, science-based measurements to assist individuals on their fitness
+            journeys, helping them make informed choices and tailor their routines to their unique needs.
+
+        </p>
+    </section>
+
+    <section id="BMI Source">
+        <h2>Body Mass Index (BMI) Source</h2>
+        <ul>
+            <li>
+                <h3>Centers for Disease Control and Prevention (CDC)</h3>
+                <p>Centers for Disease Control and Prevention. (2022, February 3). CDC - calculating BMI using the
+                    English system - BMI for age training course - DNPAO. Centers for Disease Control and Prevention.
+                    https://www.cdc.gov/nccdphp/dnpao/growthcharts/training/bmiage/page5_2.html </p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="Caloric Intake Source">
+        <h2>Caloric Intake Source</h2>
+        <ul>
+            <li>
+                <h3>National Institiutes of Health</h3>
+                <p>Dwyer JT, Melanson KJ, Sriprachy-anunt U, et al. Dietary Treatment of Obesity. [Updated 2015 Feb 28].
+                    In: Feingold KR, Anawalt B, Blackman MR, et al., editors. Endotext [Internet]. South Dartmouth (MA):
+                    MDText.com, Inc.; 2000-. Table 12, [Estimating Resting Metabolic Rate]. Available from:
+                    https://www.ncbi.nlm.nih.gov/books/NBK278991/table/diet-treatment-obes.table12est/</p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="Macronutrient Distribution Source">
+        <h2>Macronutrient Source</h2>
+        <ul>
+            <li>
+                <h3>National Institiutes of Health</h3>
+                <p>Manore MM. Exercise and the Institute of Medicine recommendations for nutrition. Curr Sports Med Rep.
+                    2005 Aug;4(4):193-8. doi: 10.1097/01.csmr.0000306206.72186.00. PMID: 16004827.</p>
+
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Ryan Richardson</p>
+    </footer>
+
+    <script>
+        document.getElementById("calculateBMI").addEventListener("click", function (event) {
+            event.preventDefault();
+            window.location.href = "bmi.html";
+        });
+    </script>
+
+    <script>
+        document.getElementById("caloricIntake").addEventListener("click", function (event) {
+            event.preventDefault();
+            window.location.href = "caloricIntake.html";
+        });
+    </script>
+
+    <script>
+        document.getElementById("contactInfo").addEventListener("click", function (event) {
+            event.preventDefault();
+            window.location.href = "contactInfo.html";
+        });
+    </script>
+
+    <script>
+        document.getElementById("homePage").addEventListener("click", function (event) {
+            event.preventDefault();
+            window.location.href = "fitSite.html";
+        });
+    </script>
+
+    <script>
+        document.getElementById("calculateMacros").addEventListener("click", function (event) {
+            event.preventDefault();
+            window.location.href = "macros.html";
+        });
+    </script>
+
+</body>
+
+</html>
