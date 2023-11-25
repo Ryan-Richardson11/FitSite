@@ -26,7 +26,6 @@ def get_food_information(food):
                     nutrient_value = nutrient.get('value', 0)
                     unit_name = nutrient.get('unitName', '')
 
-                    # List of desired nutrients
                     desired_nutrients = [
                         'Serving Size', 'Energy', 'Total lipid (fat)', 'Fatty acids, total saturated',
                         'Fatty acids, total trans', 'Cholesterol', 'Sodium', 'Carbohydrate, by difference',

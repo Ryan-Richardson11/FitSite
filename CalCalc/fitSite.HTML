@@ -21,6 +21,7 @@
             <li><a href="#caloricIntake" id="caloricIntake">Calculate Caloric Intake</a></li>
             <li><a href="#macros" id="calculateMacros">Calculate Macros</a></li>
             <li><a href="#contact" id="contactInfo">Contact</a></li>
+            <li><a href="#foodInfo" id="foodInfo">Food Information</a></li>
         </ul>
     </nav>
 
@@ -82,6 +83,13 @@
     <footer>
         <p>&copy; 2023 Ryan Richardson</p>
     </footer>
+
+    <script>
+        document.getElementById("foodInfo").addEventListener("click", function (event) {
+            event.preventDefault();
+            window.location.href = "foodInfo.html";
+        });
+    </script>
 
     <script>
         document.getElementById("calculateBMI").addEventListener("click", function (event) {
