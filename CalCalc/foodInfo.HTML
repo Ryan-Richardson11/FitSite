@@ -20,16 +20,17 @@
             <li><a href="#calculateBMI" id="calculateBMI">Calculate BMI</a></li>
             <li><a href="#caloricIntake" id="caloricIntake">Calculate Caloric Intake</a></li>
             <li><a href="#macros" id="calculateMacros">Calculate Macros</a></li>
-            <li><a href="#contact" id="contactInfoLink">Contact</a></li>
+            <li><a href="#contact" id="contactInfo">Contact</a></li>
             <li><a href="#foodInfo" id="foodInfo">Food Information</a></li>
         </ul>
     </nav>
 
     <section id="foodInfo">
-    <h2>Search the Nutrtional Value of Food</h2>
+    <h2>Search the Nutrtional Value of Food:</h2>
         <form id="foodForm">
-            <label for="food">Food Name:</label>
+            <label for="food"><b>Food Name:</b></label>
             <input type="text" id="food" required><br>
+            <button type="submit" id="searchFoodInfo">Search</button>
         </form>
         <p id="foodResult"></p>
     </section>
@@ -38,17 +39,13 @@
         <p>&copy; 2023 Ryan Richardson</p>
     </footer>
 
-    <script src="calculations.js"></script>
+    <script src="usdaAPI.js"></script>
     <script>
-        document.getElementById("foodInfo").addEventListener("click", function (event) {
+        document.getElementById("foodForm").addEventListener("submit", function (event) {
+            console.log("Searching...");
             event.preventDefault();
-            window.location.href = "foodInfo.html";
+            getFoodInformation();
         });
-    </script>
-
-    <script>
-        var contactInfo = contact();
-        document.getElementById("contactInfo").innerHTML = contactInfo;
     </script>
 
     <script>
