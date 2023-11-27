@@ -1,6 +1,6 @@
 CalCalc - Anthropometric Measurement Calculators
 
-CalCalc is a project that provides a set of anthropometric measurement calculators to help users better understand their health and fitness-related metrics. The platform covers
+- CalCalc is a project that provides a set of anthropometric measurement calculators to help users better understand their health and fitness-related metrics. The platform covers
 various calculators, including BMI (Body Mass Index), caloric intake, macronutrients, and food information. Each calculator is designed to empower users with accurate and 
 science-based measurements to make informed decisions about their health and fitness journey.
 
