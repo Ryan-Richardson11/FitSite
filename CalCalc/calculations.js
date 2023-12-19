@@ -48,8 +48,8 @@ function macros(calorieIntake) {
     var f1 = (calorieIntake * .20) / 9;
     var f2 = (calorieIntake * .35) / 9;
 
-    var c1 = (calorieIntake * .45) / 4
-    var c2 = (calorieIntake * .65) / 4
+    var c1 = (calorieIntake * .45) / 4;
+    var c2 = (calorieIntake * .65) / 4;
 
     return "Protein: " + p1.toFixed(1) + " to " + p2.toFixed(1) + " grams<br>Fats: " + f1.toFixed(1) + " to " + f2.toFixed(1) + " grams<br>Carbohydrates: " + c1.toFixed(1) + " to " + c2.toFixed(1) + " grams";
 }
